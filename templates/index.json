@@ -326,11 +326,11 @@
         "padding_bottom": 36
       }
     },
-    "simple_heading_QqJ6GE": {
-      "type": "simple-heading",
-      "name": "Simple Heading",
+    "test_section_NwxNQg": {
+      "type": "test-section",
+      "name": "Test Section",
       "settings": {
-        "text": "ty for visiting"
+        "heading": "ty for visiting"
       }
     }
   },
@@ -343,6 +343,6 @@
     "multicolumn_QzYWQM",
     "featured_collection_6frfxg",
     "featured_blog_br3dte",
-    "simple_heading_QqJ6GE"
+    "test_section_NwxNQg"
   ]
 }
