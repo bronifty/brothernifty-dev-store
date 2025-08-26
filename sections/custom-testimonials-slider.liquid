@@ -1,0 +1,398 @@
+{{- 'section-multicolumn.css' | asset_url | stylesheet_tag -}}
+{{- 'flickity.css' | asset_url | stylesheet_tag -}}
+{{- 'flickity.pkgd.min.js' | asset_url | script_tag -}}
+{{- 'custom-testimonials-slider.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'custom-testimonials-slider.js' | asset_url }}" defer="defer"></script>
+
+{%- style -%}
+  .custom-testimonials-{{ section.id }} {
+    --content-background-color: {{ section.settings.content_background_color }};
+  }
+
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top | times: 0.5 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.5 | round: 0 }}px;
+  }
+  
+  @media screen and (min-width: 750px) {
+    .custom-testimonials .title {
+      font-size: calc(var(--font-heading-scale)* 2.4rem);
+    }
+
+    .section-{{ section.id }}-padding {
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
+    }
+  }
+{%- endstyle -%}
+
+<div class="custom-testimonials custom-testimonials-{{ section.id }} color-{{ section.settings.color_scheme }}">
+  <div class="page-width section-{{ section.id }}-padding">
+    {%- unless section.settings.title == blank -%}
+      <div class="title-wrapper title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+        <h2 class="title inline-richtext h2">{{ section.settings.title }}</h2>
+        <h6 class="caption-text">{{ section.settings.caption_text }}</h6>
+      </div>
+    {%- endunless -%}
+    
+    <div class="testimonial-slider" data-autoplay="{{section.settings.auto_play | times:1000}}">
+
+     
+
+      {%comment%} hardcoded slides for testing {%endcomment%}
+      <div class="testimonial-slide">
+        <div class="content-container">
+          <div class="multicolumn-card__info">
+            <h3 class="inline-richtext">Road bike TEST</h3>
+            <div class="rte">
+            
+              <p>
+              TEST 1
+                I recently bought a road bike from Bike Shack and I'm absolutely in love with it! The staff were incredibly
+                helpful, guiding me to the perfect bike for my needs. It rides like a dream, and I've been able to hit all my
+                fitness goals. Thanks, Bike Shack, for such a fantastic experience!
+              </p>
+            
+            </div>
+          </div>
+          <div class="profile-block">
+            <div class="profile-img">
+
+              <img src="//master-js-course.myshopify.com/cdn/shop/files/woman-1.jpg?v=1713560490&amp;width=48" alt=""
+                srcset="//master-js-course.myshopify.com/cdn/shop/files/woman-1.jpg?v=1713560490&amp;width=48 48w" width="48"
+                height="48" loading="lazy" class="profile-image">
+
+            </div>
+            <div class="title-wrap">
+              <p class="name">
+                Sophia (TEST 1)
+              </p>
+              <div class="star-rating">
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+
+                {% include 'icon-star-half' %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%comment%} hardcoded slide #2{%endcomment%}
+      <div class="testimonial-slide">
+        <div class="content-container">
+          <div class="multicolumn-card__info">
+            <h3 class="inline-richtext">Mountain Bike TEST</h3>
+            <div class="rte">
+            
+              <p>
+              TEST 2
+                I recently bought a road bike from Bike Shack and I'm absolutely in love with it! The staff were incredibly
+                helpful, guiding me to the perfect bike for my needs. It rides like a dream, and I've been able to hit all my
+                fitness goals. Thanks, Bike Shack, for such a fantastic experience!
+              </p>
+            
+            </div>
+          </div>
+          <div class="profile-block">
+            <div class="profile-img">
+
+              <img src="//master-js-course.myshopify.com/cdn/shop/files/man-1.jpg?v=1713560489&width=48" alt=""
+                srcset="//master-js-course.myshopify.com/cdn/shop/files/man-1.jpg?v=1713560489&width=48 48w" width="48"
+                height="48" loading="lazy" class="profile-image">
+
+            </div>
+            <div class="title-wrap">
+              <p class="name">
+                JOHN (TEST 2)
+              </p>
+              <div class="star-rating">
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+
+        
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    {%comment%} hardcoded slide #3{%endcomment%}
+      <div class="testimonial-slide">
+        <div class="content-container">
+          <div class="multicolumn-card__info">
+            <h3 class="inline-richtext">THIRD BIKE TEST</h3>
+            <div class="rte">
+            
+              <p>
+              TEST 3
+                I recently bought a road bike from Bike Shack and I'm absolutely in love with it! The staff were incredibly
+                helpful, guiding me to the perfect bike for my needs. It rides like a dream, and I've been able to hit all my
+                fitness goals. Thanks, Bike Shack, for such a fantastic experience!
+              </p>
+            
+            </div>
+          </div>
+          <div class="profile-block">
+            <div class="profile-img">
+
+              <img src="//master-js-course.myshopify.com/cdn/shop/files/woman-1.jpg?v=1713560490&amp;width=48" alt=""
+                srcset="//master-js-course.myshopify.com/cdn/shop/files/woman-1.jpg?v=1713560490&amp;width=48 48w" width="48"
+                height="48" loading="lazy" class="profile-image">
+
+            </div>
+            <div class="title-wrap">
+              <p class="name">
+                Lisa (TEST 3)
+              </p>
+              <div class="star-rating">
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    {%comment%} hardcoded slide #4{%endcomment%}
+      <div class="testimonial-slide">
+        <div class="content-container">
+          <div class="multicolumn-card__info">
+            <h3 class="inline-richtext">Another Bike</h3>
+            <div class="rte">
+            
+              <p>
+              TEST 4
+                I recently bought a road bike from Bike Shack and I'm absolutely in love with it! The staff were incredibly
+                helpful, guiding me to the perfect bike for my needs. It rides like a dream, and I've been able to hit all my
+                fitness goals. Thanks, Bike Shack, for such a fantastic experience!
+              </p>
+            
+            </div>
+          </div>
+          <div class="profile-block">
+            <div class="profile-img">
+
+              <img src="//master-js-course.myshopify.com/cdn/shop/files/woman-1.jpg?v=1713560490&amp;width=48" alt=""
+                srcset="//master-js-course.myshopify.com/cdn/shop/files/woman-1.jpg?v=1713560490&amp;width=48 48w" width="48"
+                height="48" loading="lazy" class="profile-image">
+
+            </div>
+            <div class="title-wrap">
+              <p class="name">
+                Anna (TEST 4)
+              </p>
+              <div class="star-rating">
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                {% include 'icon-star-full' %}
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {%comment%} END hardcoded slides for testing {%endcomment%}
+
+    </div>
+    
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Custom testimonial slider",
+  "class": "section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "caption_text",
+      "label": "caption_text",
+      "default": "TESTIMONIALS"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "title",
+      "default": "Multicolumn",
+      "label": "t:sections.multicolumn.settings.title.label"
+    },
+    {
+      "type": "range",
+      "id": "auto_play",
+      "min": 0,
+      "max": 20,
+      "step": 1,
+      "unit": "sec",
+      "label": "Select Auto-Play Speed (set to 0 to disable auto-play)",
+      "default": 0
+    },
+    {
+      "type": "color_scheme",
+      "id": "color_scheme",
+      "label": "t:sections.all.colors.label",
+      "default": "background-1"
+    },
+    {
+      "type": "color",
+      "id": "content_background_color",
+      "label": "Card Background Color",
+      "default": "#313131"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.all.padding.section_padding_heading"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "t:sections.all.padding.padding_bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "title",
+          "default": "Column",
+          "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+          "label": "t:sections.multicolumn.blocks.column.settings.text.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "t:sections.multicolumn.blocks.column.settings.image.label"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "label": "Name"
+        },
+        {
+          "type": "range",
+          "id": "star_rating",
+          "label": "Star rating",
+          "min": 1,
+          "max": 5,
+          "step": 0.5,
+          "default": 5
+        }
+      ]
+    } 
+  ],
+  "presets": [
+    {
+      "name": "Custom testimonial slider",
+      "settings": {
+        "caption_text": "Testimonials",
+        "title": "What Our Customers Say",
+      
+        "auto_play": 5,
+        "color_scheme": "",
+        "content_background_color": "#313131",
+        "padding_top": 36,
+        "padding_bottom": 36
+      },
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "title": "Road bike",
+            "text": "<p>I recently bought a road bike from Bike Shack and I'm absolutely in love with it! The staff were incredibly helpful, guiding me to the perfect bike for my needs. It rides like a dream, and I've been able to hit all my fitness goals. Thanks, Bike Shack, for such a fantastic experience!<\/p>",
+            "image": "shopify:\/\/shop_images\/woman-1.jpg",
+            "name": "Sophia",
+            "star_rating": 5
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Hybrid bike",
+            "text": "<p>I picked up a hybrid bike from Bike Shack last month, and it's been awesome. It's super versatile—great for both my daily commute and some fun on the trails. The quality is top-notch and the price was right. Definitely recommending Bike Shack to all my friends!<\/p>",
+            "image": "shopify:\/\/shop_images\/man-1.jpg",
+            "name": "Ethan",
+            "star_rating": 5          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Mountain bike",
+            "text": "<p>I was searching for a durable mountain bike and found exactly what I needed at Bike Shack. The bike handles beautifully on rough trails and has really taken my weekend adventures to a new level. Super impressed with both the product and the service!<\/p>",
+            "image": "shopify:\/\/shop_images\/woman-2.jpg",
+            "name": "Isabella",
+            "star_rating": 3.5
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Hybrid bike",
+            "text": "<p>I picked up a hybrid bike from Bike Shack last month, and it's been awesome. It's super versatile—great for both my daily commute and some fun on the trails. The quality is top-notch and the price was right. Definitely recommending Bike Shack to all my friends!<\/p>",
+            "image": "shopify:\/\/shop_images\/man-2.jpg",
+            "name": "Ethan",
+            "star_rating": 5
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Road bike",
+            "text": "<p>I recently bought a road bike from Bike Shack and I'm absolutely in love with it! The staff were incredibly helpful, guiding me to the perfect bike for my needs. It rides like a dream, and I've been able to hit all my fitness goals. Thanks, Bike Shack, for such a fantastic experience!<\/p>",
+            "image": "shopify:\/\/shop_images\/woman-3.jpg",
+            "name": "Marketing Manage",
+            "star_rating": 4.5
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "title": "Hybrid bike",
+            "text": "<p>I picked up a hybrid bike from Bike Shack last month, and it's been awesome. It's super versatile—great for both my daily commute and some fun on the trails. The quality is top-notch and the price was right. Definitely recommending Bike Shack to all my friends!<\/p>",
+            "image": "shopify:\/\/shop_images\/man-3.jpg",
+            "name": "Ethan",
+            "star_rating": 5
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

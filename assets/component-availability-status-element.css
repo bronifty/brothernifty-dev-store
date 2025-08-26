@@ -1,0 +1,104 @@
+.product__accordion availability-status .accordion__content {
+  padding: 20px 0;
+}
+
+availability-status .heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+availability-status .option-container {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+availability-status .option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  column-gap: 10px;
+}
+
+availability-status .option.delivery {
+  justify-content: space-between;
+}
+
+availability-status .option:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+availability-status .icon {
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+availability-status .icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+availability-status .icon.icon-caret {
+  transform: rotate(-90deg);
+  width: 16px;
+}
+
+availability-status .icon.icon-arrow:hover {
+  color: rgba(var(--color-link), var(--alpha-link));
+}
+
+availability-status .details {
+  display: flex;
+  flex-direction: column;
+}
+
+availability-status .status {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+availability-status .details-wrap,
+availability-status .inline-wrap {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+availability-status .available {
+  background-color: rgba(var(--color-link), var(--alpha-link));
+}
+
+availability-status .unavailable {
+  background-color: red;
+  background-color: (227, 252, 2, 0.85);
+}
+
+availability-status .low {
+  background-color: rgb(252, 165, 2, 0.85);
+}
+
+availability-status .strong {
+  font-weight: 600;
+}
+
+availability-status .underlined-btn {
+  color: rgba(var(--color-link), var(--alpha-link));
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 0.1rem;
+  transition: text-decoration-thickness var(--duration-short) ease;
+  cursor: pointer;
+  text-decoration: underline;
+  user-select: none;
+}
+
+availability-status .underlined-btn:hover {
+  color: rgb(var(--color-link));
+  text-decoration-thickness: 0.2rem;
+}

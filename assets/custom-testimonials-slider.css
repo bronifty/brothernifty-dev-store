@@ -1,0 +1,109 @@
+.custom-testimonials slider-component:not(.flickity-enabled) {
+  display: flex;
+  flex-direction: row;
+  column-gap: var(--grid-desktop-horizontal-spacing);
+  justify-content: center;
+}
+
+.custom-testimonials
+  slider-component:not(.flickity-enabled)
+  .testimonial-slide {
+  margin-right: 0px;
+  min-width: 375px;
+}
+
+.custom-testimonials .testimonial-slide {
+  display: inline-flex;
+  width: 375px;
+  max-width: 100%;
+  min-height: 100%;
+  margin-right: 20px;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.custom-testimonials .flickity-enabled:focus-visible,
+.custom-testimonials .flickity-enabled .flickity-viewport:focus-visible {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.custom-testimonials .content-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--content-background-color);
+  /* border-radius: 5px; */
+}
+
+.custom-testimonials .content-container .multicolumn-card__info h3 {
+  margin: 0;
+}
+
+.custom-testimonials .caption-text {
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 130%;
+  margin: 0;
+}
+
+.custom-testimonials .profile-block {
+  display: flex;
+  margin: 0 25px 25px;
+}
+
+.custom-testimonials .profile-block .profile-img {
+  grid-column-gap: 20px;
+  grid-row-gap: 0px;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto 1fr;
+  grid-auto-columns: 1fr;
+  display: grid;
+
+  width: 64px;
+  height: 64px;
+  background-color: var(--off-white);
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.custom-testimonials .profile-block .profile-img img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.custom-testimonials .profile-block .title-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.custom-testimonials .profile-block .title-wrap p {
+  margin: 0;
+}
+
+.custom-testimonials .profile-block .title-wrap .name {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.custom-testimonials .profile-block .title-wrap .position {
+  font-size: 14px;
+  line-height: 160%;
+}
+
+.custom-testimonials .content-container .button {
+  margin: 0 40px 20px;
+}
+
+.custom-testimonials .content-container .blank-btn-container {
+  height: 47px;
+  margin: 0 40px 20px;
+}

@@ -1,0 +1,57 @@
+{{ 'section-product-compare-view.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'product-compare-view.js' | asset_url }}" defer="defer"></script>
+
+
+
+{% assign selected_collection = section.settings.collection %}
+
+<div class="page-width section-product-compare">
+
+<product-compare-view>
+  <div class="heading-wrap">
+    <h2 class="heading-text">{{ section.settings.header | escape }}</h2>
+    <div class="product-selector">
+      <div class="select">
+        <select id="product-select" class="select__select">
+          <option value="">Select a bike</option>
+          {% for product in selected_collection.products %}
+              <option value="{{ product.handle }}">{{ product.title }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <button class="button button--secondary" id="add-product-button">Add to Comparison</button>
+    </div>
+  </div>
+
+  <div id="compare-product-container">
+
+  </div>
+</product-compare-view>
+
+</div>
+
+
+{% schema %}
+{
+  "name": "Product comparison",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "header",
+      "label": "Header text"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Select Collection"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom product comparison"
+    }
+  ]
+}
+{% endschema %}

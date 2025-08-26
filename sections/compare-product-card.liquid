@@ -1,0 +1,33 @@
+{% comment %} 
+Replace all hardcoded values with dynamic values from the product object 
+  - Elements' id & remove button = product handle
+  - Data points from product metafields
+  - Thumbnail image 200x width filter
+{% endcomment %}
+
+
+<div class="compare-product-card" id="red-mountain-bike">
+  <div class="title-wrap">
+    <h4>Red mountain bike</h4>
+
+    <button class="remove-product-button" data-removeproducthandle="red-mountain-bike" aria-label="Remove product">
+    
+    </button>
+
+  </div>
+  <img src="//master-js-course.myshopify.com/cdn/shop/files/bikeredtransparent_200x.png?v=1712193379" alt="Red mountain bike">
+  <p>Price: €4.200,00</p>
+  <p>Rating: 4.9 ⭐</p>
+  <p>Frame: Hydraulic Disc</p>
+  <p>Suspension: Hardtail</p>
+  <p>Brake: Carbon</p>
+  <p>Gears: 2x10</p>
+  <p><a class="link--text" href="/products/red-mountain-bike">More Details</a></p>
+</div>
+
+{% schema %}
+{
+  "name": "compare product card",
+  "settings": []
+}
+{% endschema %}

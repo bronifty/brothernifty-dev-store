@@ -1,0 +1,79 @@
+.quiz{
+    min-height: calc(100vh - 142px);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10rem;
+  }
+   
+  #result, 
+  #result-equipment, 
+  .hidden-question,
+  .quiz input{
+    display: none;
+  }
+  
+  .quiz label span{
+    background-color: transparent;
+    padding: 1rem;
+    color: white;
+    border: solid 1px white;
+    transition: 0.2s;
+  }
+  
+  .label-container{
+    margin-bottom: 8rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    max-width: 800px;
+  }
+  
+  .label-container label{
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .label-container label .img-wrap img {
+    width: 300px;
+    height: 220px;
+    object-fit: contain;
+  }
+  
+  .label-container label span{
+    margin-top: 2rem;
+  }
+  
+  .label-container input[type='radio']:checked + label span{
+    background-color: white;
+    color: black;
+  }
+  
+  .quiz #nav-buttons{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .quiz .button{
+    margin-top: 2rem;
+    min-width: 146px;
+  }
+  
+  .quiz h2{
+    line-height: 1.5;
+  }
+  
+  @media only screen and (max-width: 750px) {
+    .label-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .quiz{
+        /* height: 1865px; */
+    }
+  }

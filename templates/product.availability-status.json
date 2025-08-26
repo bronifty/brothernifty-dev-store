@@ -1,0 +1,229 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product-availability-status",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "⭐⭐⭐⭐⭐ (5)",
+            "text_style": "body"
+          }
+        },
+        "product-rating": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "availability_status_Mnmc7J": {
+          "type": "availability-status",
+          "settings": {
+          }
+        },
+        "icon_with_text_VrMPVY": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "horizontal",
+            "icon_1": "check_mark",
+            "heading_1": "All components inspected",
+            "icon_2": "return",
+            "heading_2": "30-Day Returns",
+            "icon_3": "stopwatch",
+            "heading_3": "Quick assembly"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "product-rating",
+        "price",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "description",
+        "share",
+        "availability_status_Mnmc7J",
+        "icon_with_text_VrMPVY"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "color_scheme": "scheme-1",
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "thumbnail_slider",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 12
+      }
+    },
+    "collage_rPtB8c": {
+      "type": "collage",
+      "blocks": {
+        "image_np6cpE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage_1.jpg"
+          }
+        },
+        "image_jXzY8e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage_2.jpg"
+          }
+        },
+        "image_Ac9GfX": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/collage_3.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_np6cpE",
+        "image_jXzY8e",
+        "image_Ac9GfX"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "desktop_layout": "left",
+        "mobile_layout": "column",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_tKVa4w": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_AFKViM": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What safety gear do I need for mountain biking?",
+            "icon": "check_mark",
+            "row_content": "<p>Ride in Style and Confidence with Premium Protective Equipment for Mountain Biking.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_XJHmqr": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How often should I maintain my mountain bike?",
+            "icon": "check_mark",
+            "row_content": "<p>Fine-tune to Perfection: Keep Your Mountain Bike in Prime Condition.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4mNN6P": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Do I need any special tools to assemble my mountain bike?",
+            "icon": "check_mark",
+            "row_content": "<p>Assemble your mountain bike like a master craftsman with our premium toolkit selection.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_AFKViM",
+        "collapsible_row_XJHmqr",
+        "collapsible_row_4mNN6P"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "FAQ",
+        "heading_size": "h2",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_size": "h2",
+        "products_to_show": 3,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "main",
+    "collage_rPtB8c",
+    "collapsible_content_tKVa4w",
+    "related-products"
+  ]
+}

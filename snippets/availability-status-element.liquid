@@ -1,0 +1,54 @@
+{{ 'component-availability-status-element.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'availability-status-element.js' | asset_url }}" defer="defer"></script>
+
+<availability-status class="availability-status">
+    <div class="heading">
+        <span class="strong">Status</span>
+        <div id="change-location-btn" class="underlined-btn">Change Location</div>
+    </div>
+
+    <div class="options-container">
+
+        <div class="option delivery">
+            <div class="details-wrap">
+
+                <div class="icon">
+                    {% render 'icon-delivery-truck' %}
+                </div>
+
+                <div class="details">
+                    <span class="strong">Delivery within <span class="active-location-text underlined-btn">New York</span>
+                        Area</span>
+                    <div class="inline-wrap">
+                        <span id="availability-delivery-status" class="status available"></span>
+                        <span id="availability-delivery-text" class="availability">Available</span>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="option store">
+            <div class="details-wrap">
+                <div class="icon">
+                    {% render 'icon-store' %}
+                </div>
+
+                <div class="details">
+                    <span class="strong">In store at <span class="active-location-text underlined-btn">New York</span>
+                        Location</span>
+
+                    <div class="inline-wrap">
+                        <span id="availability-store-status" class="status unavailable"></span>
+                        <span id="availability-store-text" class="availability">Unavailable</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+</availability-status>

@@ -1,0 +1,343 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image-with-text": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "FIND YOUR PERFECT RIDE TODAY",
+            "heading_size": "h1"
+          }
+        },
+        "caption_HMmWJ3": {
+          "type": "caption",
+          "settings": {
+            "caption": "Quality Bikes for Every Trail",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "button": {
+          "type": "button",
+          "settings": {
+            "button_label": "SHOP",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "caption_HMmWJ3",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/1_-_journey.webp",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "custom_css": [
+        "@media screen and (min-width: 990px) {.card .media.media--hover-effect > img:first-child:only-child {transform: scale(0.8); }}"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "biikes",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_7GrjRn": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_Jyfkhc": {
+          "type": "caption",
+          "settings": {
+            "caption": "Outdoor",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_8ULhiy": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Gear Up for Adventure</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "button_D4B3Hx": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        },
+        "text_9wjMfJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Explore our collection today and find the perfect companion for your next adventure, ensuring every ride is exhilarating and safe</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_Jyfkhc",
+        "heading_8ULhiy",
+        "button_D4B3Hx",
+        "text_9wjMfJ"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/2_-_close_up.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_e7KBW4": {
+      "type": "image-with-text",
+      "blocks": {
+        "caption_pRrD8U": {
+          "type": "caption",
+          "settings": {
+            "caption": "Long Distance",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "heading_f4xFxp": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Peak Performance</strong>",
+            "heading_size": "h1"
+          }
+        },
+        "button_zrDCjt": {
+          "type": "button",
+          "settings": {
+            "button_label": "",
+            "button_link": "shopify://collections/all",
+            "button_style_secondary": false
+          }
+        },
+        "text_TzBNhU": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Perfect for ascending steep inclines or navigating rocky paths, they provide stability, comfort, and power on diverse terrains.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "caption_pRrD8U",
+        "heading_f4xFxp",
+        "button_zrDCjt",
+        "text_TzBNhU"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/3_-_victory.jpg",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-1",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_tEbMzP": {
+      "type": "rich-text",
+      "blocks": {
+        "caption_3CB77Q": {
+          "type": "caption",
+          "settings": {
+            "caption": "WHY CHOOSE US?",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "caption_3CB77Q"
+      ],
+      "custom_css": [
+        ".rich-text__caption {font-size: 16px;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_QzYWQM": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_k3z7Mz": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>\"I recently purchased a mountain bike from this store and I couldn't be happier with my purchase! The staff were knowledgeable and helpful in guiding me to the right bike for my needs, and the selection of bikes was impressive. I've been out on the trails several times now and the bike performs beautifully. Thanks for a great experience!\" - <strong>Sarah T.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3wDNNF": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>\"I've been a loyal customer of this mountain bike store for years, and for good reason. The staff are always friendly and willing to help with any questions I have, and the bikes are top-notch. I've purchased multiple bikes from them and have never been disappointed. They truly care about their customers and it shows in their service.\" <strong>- Mike R.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_iWByxy": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>\"I had an amazing experience at this mountain bike store! I was new to mountain biking and the staff took the time to explain everything to me and help me find the perfect bike. They even gave me some tips for getting started on the trails. I've been hooked ever since and it's all thanks to this store!\" <strong>- Emily S.</strong></p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_k3z7Mz",
+        "column_3wDNNF",
+        "column_iWByxy"
+      ],
+      "custom_css": [
+        "{margin: 30px;}",
+        ".multicolumn .title-wrapper-with-link {justify-content: center;}"
+      ],
+      "settings": {
+        "title": "Don't listen to us, listen to them",
+        "heading_size": "h1",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection_6frfxg": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "helmets",
+        "products_to_show": 4,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": true,
+        "enable_quick_add": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "featured_blog_br3dte": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Blog posts",
+        "heading_size": "h2",
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "show_view_all": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image-with-text",
+    "featured_collection",
+    "image_with_text_7GrjRn",
+    "image_with_text_e7KBW4",
+    "rich_text_tEbMzP",
+    "multicolumn_QzYWQM",
+    "featured_collection_6frfxg",
+    "featured_blog_br3dte"
+  ]
+}

@@ -1,0 +1,131 @@
+{{ 'section-quiz.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'quiz.js' | asset_url }}" defer="defer"></script>
+  
+<!--
+<script>
+  const questions = [
+    {
+      name: "product_type",
+      text: "What are you looking for?",
+      options: [
+        { value: "bike", img: '{{"quiz-bike.jpg" | asset_url}}', label: "A new bike" },
+        { value: "equipment", img: '{{"quiz-equipment.jpg" | asset_url}}', label: "Equipment" }
+      ]
+    },
+    {
+      name: "bike_type",
+      text: "What kind of Bike are you looking for?",
+      options: [
+        { value: "track", img: '{{"quiz-track.jpg" | asset_url}}', label: "Track Bike" },
+        { value: "mountain", img: '{{"quiz-mountain.jpg" | asset_url}}', label: "Mountain Bike" }
+      ]
+    },
+    {
+      name: "color",
+      text: "What's your preferred color?",
+      options: [
+        { value: "black", img: '{{ all_products["black-mountain-bike"] | image_url: width: 300 }}', label: "Black" },
+        { value: "blue", img: '{{ all_products["blue-mountain-bike"] | image_url: width: 300 }}', label: "Blue" },
+        { value: "yellow", img: '{{ all_products["yellow-mountain-bike"] | image_url: width: 300 }}', label: "Yellow" },
+        { value: "red", img: '{{ all_products["red-mountain-bike"] | image_url: width: 300 }}', label: "Red" }
+      ]
+    }
+  ];
+</script>
+-->
+
+<div class="quiz page-width">
+
+  <form id="quizForm">
+
+    <h2>1) What are you looking for?</h2>
+    <div class="label-container">
+      <input type="radio" id="bike" name="product_type" value="bike">
+      <label for="bike">
+        <div class="img-wrap">
+          <img src="{{'quiz-bike.jpg' | asset_url}}">
+        </div>
+        <span>A new bike</span>
+      </label>
+      <input type="radio" id="equipment" name="product_type" value="equipment">
+      <label for="equipment">
+        <div class="img-wrap">
+          <img src="{{'quiz-equipment.jpg' | asset_url}}">
+        </div>
+        <span>Equipment</span>
+      </label>
+    </div>
+
+    <h2>2) What kind of Bike are you looking for?</h2>
+    <div class="label-container">
+      <input type="radio" id="track" name="bike_type" value="track">
+      <label for="track">
+        <div class="img-wrap">
+          <img src="{{'quiz-track.jpg' | asset_url}}">
+        </div>
+        <span>Track Bike</span>
+      </label>
+      <input type="radio" id="mountain" name="bike_type" value="mountain">
+      <label for="mountain">
+        <div class="img-wrap">
+          <img src="{{'quiz-mountain.jpg' | asset_url}}">
+        </div>
+        <span>Mountain Bike</span>
+      </label>
+    </div>
+
+    <h2>3) What's your preferred color?</h2>
+    <div class="label-container">
+      <input type="radio" id="black" name="color" value="black">
+      <label for="black">
+        <div class="img-wrap">
+          <img src="{{ all_products['black-mountain-bike'] | image_url: width: 300 }}">
+        </div>
+        <span>Black</span>
+      </label>
+      <input type="radio" id="blue" name="color" value="blue">
+      <label for="blue">
+        <div class="img-wrap">
+          <img src="{{ all_products['blue-mountain-bike'] | image_url: width: 300 }}">
+        </div>
+        <span>Blue</span>
+      </label>
+      <input type="radio" id="yellow" name="color" value="yellow">
+      <label for="yellow">
+        <div class="img-wrap">
+          <img src="{{ all_products['yellow-mountain-bike'] | image_url: width: 300 }}">
+        </div>
+        <span>Yellow</span>
+      </label>
+      <input type="radio" id="red" name="color" value="red">
+      <label for="red">
+        <div class="img-wrap">
+          <img src="{{ all_products['red-mountain-bike'] | image_url: width: 300 }}">
+        </div>
+        <span>Red</span>
+      </label>
+    </div>
+
+  </form>
+  <div id="nav-buttons">
+    <!--
+    <button id="prev-button" class="button previous-btn">← Previous</button>
+    <button id="next-button" class="button next-btn">Next →</button>
+    -->
+    <button id="finish-button" class="button next-btn">Submit</button>
+  </div>
+ 
+</div>
+
+{% schema %}
+  {
+    "name": "Quiz",
+    "settings": [],
+    "presets": [
+      {
+      "name": "Quiz",
+      "category": "Custom"
+      }
+    ]
+  }
+{% endschema %}

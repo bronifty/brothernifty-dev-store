@@ -1,0 +1,47 @@
+<script src="{{ 'countdown.js' | asset_url }}" type="module" defer="defer"></script>
+
+{{- 'component-countdown.css' | asset_url | stylesheet_tag -}}
+
+
+<div class="page-width">
+
+  <countdown-timer>
+            <div class="countdown-text">{{ section.settings.text }}</div>
+            <div class="countdown-timer" data-end-date="{{section.settings.final_date}}">
+              <div class="days"></div>
+              <div class="hours"></div>
+              <div class="minutes"></div>
+              <div class="seconds"></div>
+            </div>
+  </countdown-timer>
+
+</div>
+
+{% schema %}
+{
+  "name": "Countdown",
+  "settings": [
+    {
+      "type": "text",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "label": "Final date",
+      "id": "final_date",
+      "info": "Example: May 25, 2026 16:37:52 EST"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Countdown",
+      "category": "Custom",
+      "settings": {
+        "text": "Spring Sale! Save up to 20%",
+        "final_date": "May 25, 2026 16:37:52 EST"
+      }
+    }
+  ]
+}
+{% endschema %}
