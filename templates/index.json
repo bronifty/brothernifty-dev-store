@@ -42,6 +42,7 @@
         "button"
       ],
       "settings": {
+        "image": "shopify://shop_images/1_-_journey.webp",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
