@@ -129,7 +129,7 @@
         "text_9wjMfJ"
       ],
       "settings": {
-        "image": "shopify://shop_images/2_-_close_up.jpg",
+        "image": "shopify://shop_images/3_-_victory.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -185,6 +185,7 @@
         "text_TzBNhU"
       ],
       "settings": {
+        "image": "shopify://shop_images/2_-_close_up_c2010f63-1b51-42f9-91d3-593bc89e6a59.jpg",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
