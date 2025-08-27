@@ -118,9 +118,7 @@
         },
         "image_Ac9GfX": {
           "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/3._bike_riding.webp"
-          }
+          "settings": {}
         }
       },
       "block_order": [
