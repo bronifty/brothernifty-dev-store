@@ -34,7 +34,7 @@
 
   <script src="{{ 'product-info.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-  <script> console.log('~ Debug test 1');  </script>
+  {% comment %} <script> console.log('~ Debug test 1');  </script> {% endcomment %}
   {%- if product.quantity_price_breaks_configured? -%}
     <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'price-per-item.js' | asset_url }}" defer="defer"></script>
@@ -94,7 +94,7 @@
                 </p>
               {%- when 'title' -%}
                 <div class="product__title" {{ block.shopify_attributes }}>
-                  <script> console.log("~ {{ product.title | escape }}"); </script>
+                  {% comment %} <script> console.log("~ {{ product.title | escape }}"); </script> {% endcomment %}
                   <h1>{{ product.title | escape }}</h1>
                   <a href="{{ product.url }}" class="product__title">
                     <h2 class="h1">
@@ -775,11 +775,11 @@
   </div>
 </section>
 
-<script> 
+{% comment %} <script> 
   document.addEventListener('DOMContentLoaded', () => {
     console.info("{{ product.selected_or_first_available_variant.price | divided_by: 100.00}}");
   }, false);
-</script>
+</script> {% endcomment %}
 
 {% schema %}
 {
